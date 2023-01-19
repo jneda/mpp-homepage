@@ -1,5 +1,9 @@
-import "./Homepage.css";
+import MoodSelector from "./MoodSelector";
 import Navbar from "../Navbar/Navbar";
+
+import VenerableButton from "./VenerableButton";
+
+import "./Homepage.css";
 
 export default function App() {
   let path = "backgrounds/bg01.jpg";
@@ -11,6 +15,8 @@ export default function App() {
           backgroundImage: `url(${path})`
         }}
       ></div>
+      <VenerableButton />
+      <MoodSelector />
       <Navbar />
     </>
   );
